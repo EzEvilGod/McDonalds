@@ -14,7 +14,7 @@ public class Payment {
         System.out.println("[1] Carta di debito");
         System.out.println("[2] Carta di credito");
         System.out.println("[3] Pagamento digitale");
-        System.out.println("[4] Conanti alla consegna");
+        System.out.println("[4] Contanti alla consegna");
         ch = input.nextInt();
         if(ch<=0||ch>4){
             System.out.println("Errore, riprova di nuovo");
@@ -47,10 +47,9 @@ public class Payment {
             if (cv/Math.pow(10,2)<1 || cv/Math.pow(10,2)>9){
                 System.out.println("CVV e/o CVC errati, riprova");
             }
-            if (ch == 4){
+        }
+        if (ch == 4){
                 System.out.println("Dovrai inviare i tuoi contanti quando il ragazzo delle consegne arriva al tuo indirizzo");
             }
-
-        }
     }
 }
